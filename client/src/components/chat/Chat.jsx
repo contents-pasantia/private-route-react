@@ -1,6 +1,6 @@
 import {useState,useEffect} from 'react';
 import io from 'socket.io-client';
-const socket = io('http://localhost:3001');
+//const socket = io('http://localhost:3001');
 
 export function Chat(){
   const [messages, setMessages] = useState([]);
@@ -12,10 +12,10 @@ export function Chat(){
       setMessages([message, ...messages]);
     };
 
-    socket.on("message", receiveMessage);
+   // socket.on("message", receiveMessage);
 
     return () => {
-      socket.off("message", receiveMessage);
+     // socket.off("message", receiveMessage);
     };
   }, [messages]);
 
@@ -27,7 +27,7 @@ export function Chat(){
     };
     setMessages([newMessage, ...messages]);
     setMessage("");
-    socket.emit("message", newMessage);
+   // socket.emit("message", newMessage);
   };
 
   return (

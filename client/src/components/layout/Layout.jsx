@@ -13,7 +13,7 @@ class Layout extends React.Component {
     return (
       <>
         <Navbar />
-        <div className="h-screen">
+        <div>
           {this.props.children}
         </div>
         <Footer />        

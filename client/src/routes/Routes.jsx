@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../components/container/HomeContainer";
 import Chat from "../components/container/ChatContainer";
 import NotFound from "../components/layout/notfound/NotFound";
+import Gallery from "../components/container/GalleryContainer";
 //import Home from "../pages/Home";
 //import Login from "../pages/Login";
 //import Panel from "../pages/Panel";
@@ -23,11 +24,10 @@ class RoutersApp extends Component{
                   path="/chat"
                   element={<PrivateRoute  component={Chat} role={"test"} />}
                 >
-
                 </Route>
                 <Route
-                  path="/chat2"
-                  element={<PrivateRoute  component={Chat} role={"basic"} />}
+                  path="/gallery"
+                  element={<PrivateRoute  component={Gallery} role={"test"} />}
                 >
                 </Route>
                 <Route path="*" element={<NotFound/>} />
