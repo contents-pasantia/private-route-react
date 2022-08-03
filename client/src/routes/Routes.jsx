@@ -4,6 +4,7 @@ import Home from "../components/container/HomeContainer";
 import Chat from "../components/container/ChatContainer";
 import NotFound from "../components/layout/notfound/NotFound";
 import Gallery from "../components/container/GalleryContainer";
+import ComponentContainer from "../components/container/ComponentsContainer";
 //import Home from "../pages/Home";
 //import Login from "../pages/Login";
 //import Panel from "../pages/Panel";
@@ -30,6 +31,7 @@ class RoutersApp extends Component{
                   element={<PrivateRoute  component={Gallery} role={"test"} />}
                 >
                 </Route>
+                <Route exct path="/component" element={<ComponentContainer />} />
                 <Route path="*" element={<NotFound/>} />
               </Routes>
             </>

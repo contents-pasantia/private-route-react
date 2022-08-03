@@ -31,6 +31,9 @@ class Navbar extends Component{
                       <li className="text-white hover:text-indigo-200">
                           <Link to="/chat">Chat</Link>
                       </li>
+                      <li className="text-white hover:text-indigo-200">
+                          <Link to="/component">Component</Link>
+                      </li>
                   </ul>
                   <div className="mt-3 space-y-2 lg:hidden md:inline-block">
           </div>

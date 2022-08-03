@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../layout/Layout";
-import {Gallery} from "../gallery/Gallery";
+import Gallery from "../gallery/Gallery";
 
 
 class ChatContainer extends React.Component {
